@@ -1,0 +1,34 @@
+<!DOCTYpE html>
+<html>
+<head>
+	 <title> NAIVE BAYES</title>
+	 {% load staticfiles%}
+	 <link rel="stylesheet" type="text/css" href={% static 'css/n.css'%}/>
+</head>
+<body>
+	<div class="text">
+		<form action='.' name="form1" method='POST' >{%csrf_token%}
+        Movie Name:<br><br>
+        <input type="text" name="moviename" required><br><br>
+        Review:<br><br>
+        <input type="text" name="review" required><br><br>
+     <!--<textarea rows = "10" cols = "70" name = "review" value="">
+
+         </textarea><br>-->
+
+			<button type="submit" name="submit1" value="Submit" >Submit</button>
+
+<div>
+    {% block content %}
+
+        <p name="pmoviename">Movie Name        :{{ moviename }}</p>
+		<p name="preview">Review            :{{ review }}</p>
+		<p name="pmoviefreshness">Movie Freshness   :{{ freshness }}</p>
+		<p name="poverallfreshness">Overall Freshness :{{ avgfreshness }}</p>
+    {% endblock %}
+</div>
+</form>
+
+
+	</body>
+</html>

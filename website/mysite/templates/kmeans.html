@@ -1,0 +1,113 @@
+<!DOCTYpE html>
+<html>
+<head>
+	 <title> K-Means</title>
+	 {% load staticfiles%}
+	 <link rel="stylesheet" type="text/css" href={% static 'css/k.css'%}/>
+</head>
+<body>
+	<div class="nav">
+		<p> * Selecting Every option is mandatory *</p>
+	</div>
+
+
+
+
+
+	<div class = "box">
+		<form action='.' name="form" method='POST'>{%csrf_token%}
+			<select required name = "Genre1" placeholder="Genre1" >
+				<option value="">(select Genre 1)</option>
+				<option value="Action">Action</option>
+				<option value="Adventure">Adventure</option>
+				<option value="Animation">Animation</option>
+				<option value="Children">Children</option>
+				<option value="Comedy">Comedy</option>
+				<option value="Crime">Crime</option>
+				<option value="Documentary">Documentary</option>
+				<option value="Drama">Drama</option>
+				<option value="Fantasy">Fantasy</option>
+				<option value="Film-Noir">Film-Noir</option>
+				<option value="Horror">Horror</option>
+				<option value="IMAX">IMAX</option>
+				<option value="Musical">Musical</option>
+				<option value="Mystery">Mystery</option>
+				<option value="Romance">Romance</option>
+				<option value="Sci-Fi">Sci-Fi</option>
+				<option value="Thriller">Thriller</option>
+				<option value="War">War</option>
+				<option value="Western">Western</option>
+			</select>
+			<select required name = "Genre2" placeholder="Genre2" >
+				<option value="">(select Genre 2)</option>
+				<option value="Action">Action</option>
+				<option value="Adventure">Adventure</option>
+				<option value="Animation">Animation</option>
+				<option value="Children">Children</option>
+				<option value="Comedy">Comedy</option>
+				<option value="Crime">Crime</option>
+				<option value="Documentary">Documentary</option>
+				<option value="Drama">Drama</option>
+				<option value="Fantasy">Fantasy</option>
+				<option value="Film-Noir">Film-Noir</option>
+				<option value="Horror">Horror</option>
+				<option value="IMAX">IMAX</option>
+				<option value="Musical">Musical</option>
+				<option value="Mystery">Mystery</option>
+				<option value="Romance">Romance</option>
+				<option value="Sci-Fi">Sci-Fi</option>
+				<option value="Thriller">Thriller</option>
+				<option value="War">War</option>
+				<option value="Western">Western</option>
+			</select>
+
+			<select required name = "Genre3" placeholder="Genre3" >
+				<option value="">(select Genre3)</option>
+				<option value="Action">Action</option>
+				<option value="Adventure">Adventure</option>
+				<option value="Animation">Animation</option>
+				<option value="Children">Children</option>
+				<option value="Comedy">Comedy</option>
+				<option value="Crime">Crime</option>
+				<option value="Documentary">Documentary</option>
+				<option value="Drama">Drama</option>
+				<option value="Fantasy">Fantasy</option>
+				<option value="Film-Noir">Film-Noir</option>
+				<option value="Horror">Horror</option>
+				<option value="IMAX">IMAX</option>
+				<option value="Musical">Musical</option>
+				<option value="Mystery">Mystery</option>
+				<option value="Romance">Romance</option>
+				<option value="Sci-Fi">Sci-Fi</option>
+				<option value="Thriller">Thriller</option>
+				<option value="War">War</option>
+				<option value="Western">Western</option>
+			</select>
+	</div>
+
+		<div class="main">
+			<input  type="submit" name="submit" value="Submit"/>
+		</div>
+		<div class="button">
+			<button name="Graph1"><a href="Graph1.html" class="btn" >DATA</a></button>
+			<button name="Graph2"><a href="Graph2.html" class="btn" >K=2</a></button>
+			<button name="Graph3"><a href="Graph3.html" class="btn" >K=3</a></button>
+			<button name="Graph4"><a href="Graph4.html" class="btn" >K=4</a></button>
+			<button name="Graph5"><a href="Graph5.html" class="btn" >K Best</a></button>
+			<button name="Graph6"><a href="Graph6.html" class="btn" >3D</a></button>
+			<button name="Graph7"><a href="Graph7.html" class="btn" >Heat Map</a></button>
+			<button name="Graph8"><a href="Graph8.html" class="btn" >Score</a></button>
+
+			<!--<a href="Graph1.html" class="btn" >DATA</a>
+			<a href="Graph2.html" class="btn" >K=2</a>
+			<a href="Graph3.html" class="btn" >K=3</a>
+			<a href="Graph4.html" class="btn" >K=4</a>
+			<a href="Grap5h.html" class="btn" >KBest</a>-->
+		</div>
+
+</form>
+
+
+	</div>
+	</body>
+</html>
